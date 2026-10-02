@@ -1,0 +1,236 @@
+body {
+  background-color: #f8f9fa;
+  min-height: 100vh;
+}
+
+.navbar {
+  min-height: 60px;
+}
+
+main {
+  min-height: calc(100vh - 140px);
+}
+
+.page-header {
+  margin-bottom: 24px;
+}
+
+.summary-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.summary-card {
+  border: none;
+  min-height: 140px;
+}
+
+.summary-card h2 {
+  font-size: 28px;
+  margin-top: 12px;
+}
+
+.card {
+  border: none;
+}
+
+.card-header {
+  background-color: white;
+}
+
+.expenses-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+
+.filters {
+  display: flex;
+  gap: 10px;
+  width: 450px;
+}
+
+.filters input {
+  width: 250px;
+}
+
+.filters select {
+  width: 180px;
+}
+
+.table th {
+  white-space: nowrap;
+}
+
+.table td {
+  vertical-align: middle;
+}
+
+.action-buttons {
+  white-space: nowrap;
+}
+
+.badge {
+  font-size: 14px;
+}
+
+.loading-container {
+  min-height: 120px;
+}
+
+.footer {
+  background-color: #212529;
+  padding: 20px 0;
+  margin-top: 40px;
+}
+
+.footer-text {
+  color: white;
+  text-align: center;
+  font-size: 14px;
+  margin: 0;
+}
+
+body.dark-mode {
+  background-color: #121212;
+  color: #f1f1f1;
+}
+
+body.dark-mode .card {
+  background-color: #1e1e1e;
+  color: #f1f1f1;
+}
+
+body.dark-mode .card-header {
+  background-color: #252525;
+  color: #f1f1f1;
+}
+
+body.dark-mode .text-muted {
+  color: #b8b8b8 !important;
+}
+
+body.dark-mode .form-control,
+body.dark-mode .form-select {
+  background-color: #2b2b2b;
+  border-color: #555;
+  color: #f1f1f1;
+}
+
+body.dark-mode .form-control::placeholder {
+  color: #aaaaaa;
+}
+
+body.dark-mode .form-select option {
+  background-color: #2b2b2b;
+  color: #f1f1f1;
+}
+
+body.dark-mode .table {
+  --bs-table-bg: #1e1e1e;
+  --bs-table-color: #f1f1f1;
+  --bs-table-hover-bg: #2b2b2b;
+  --bs-table-hover-color: #ffffff;
+  color: #f1f1f1;
+  background-color: #1e1e1e;
+}
+
+body.dark-mode .table > :not(caption) > * > * {
+  background-color: #1e1e1e;
+  color: #f1f1f1;
+}
+
+body.dark-mode .table th,
+body.dark-mode .table td {
+  border-color: #444;
+}
+
+body.dark-mode .table-hover tbody tr:hover {
+  color: #ffffff;
+}
+
+body.dark-mode .table-hover tbody tr:hover {
+  color: #ffffff;
+}
+
+body.dark-mode .modal-content {
+  background-color: #1e1e1e;
+  color: #f1f1f1;
+}
+
+body.dark-mode .modal-header,
+body.dark-mode .modal-footer {
+  border-color: #444;
+}
+
+@media (max-width: 992px) {
+  .summary-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .expenses-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .filters {
+    width: 100%;
+  }
+
+  .filters input,
+  .filters select {
+    width: 50%;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar-brand {
+    font-size: 16px;
+  }
+
+  .navbar .container {
+    gap: 10px;
+  }
+
+  h1 {
+    font-size: 27px;
+  }
+
+  .card-body {
+    padding: 16px;
+  }
+
+  .summary-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .summary-card {
+    min-height: 120px;
+  }
+
+  .summary-card h2 {
+    font-size: 24px;
+  }
+
+  .filters {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .filters input,
+  .filters select {
+    width: 100%;
+  }
+
+  .footer {
+    padding: 16px 0;
+  }
+
+  .footer-text {
+    font-size: 13px;
+  }
+}
